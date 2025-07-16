@@ -5,16 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
+    <style>
+        .logostyle {
+            width: 80px;
+            height: auto;
+        }
+    </style>
+    <link href="css/productcss.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- header start -->
+    <!-- Header start -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="Images/fastfash.jpeg" alt="logo" class="img-fluid h-25 w-25">Fast Fashion</a>
+                    <img src="Images/fastfash.jpeg" alt="logo" class="img-fluid logostyle">Fast Fashion</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active bg-info-subtle" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="men.html">Men</a>
@@ -30,7 +37,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="women.html">Women</a>
                         </li>
-                        <li class="nav-item active bg-info-subtle">
+                        <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact
                                 us</a>
                         </li>
@@ -41,12 +48,24 @@
                         <li class="nav-item">
                             <a class="nav-link" href="services.html">Services</a>
                         </li>
-                        
+
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <a href="cart.html" class="noline link-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" fill="currentColor"
+                            class="bi bi-cart" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                        </svg>
+                    </a>
+
+                    <a href="signup.html" class="noline p-3 link-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -94,7 +113,7 @@
                 </div>
                 <hr>
                 <!-- Form & location -->
-                 <h3>Connect here to know more information </h3>
+                <h3>Connect here to know more information </h3>
                 <div class="row">
                     <div class="col md-6">
                         <div class="container border border-info">
