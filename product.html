@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Clothing Products</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <style>
+     .logostyle{
+                width: 80px;
+                height: auto;
+            }
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -62,6 +67,58 @@
   </style>
 </head>
 <body>
+  <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="Images/f&f.jpg" alt="logo"
+                          class="img-fluid logostyle">Fast Fashion</a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="men.html">Men</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="women.html"
+                                    aria-disabled="true">Women</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"
+                                    aria-disabled="true">Contact us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html"
+                                    aria-disabled="true">About Us</a>
+                            </li>
+                             <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="services.html">Services</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="product.html">Products</a>
+                              </li>
+                               <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="Footwear.html">Footwears</a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
 <header>
   <h1>Fast Fashion Store - Products</h1>
@@ -94,7 +151,7 @@
 </main>
 
 <footer>
-  <p>&copy; 2025 Fashion Store. All rights reserved.</p>
+  <p>&copy; 2025 Fast Fashion Store. All rights reserved.</p>
 </footer>
 
 </body>
