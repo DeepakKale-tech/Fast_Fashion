@@ -18,7 +18,39 @@ body {
     z-index: 0;
 }
 
-main,header,footer {
+main,
+header,
+footer {
     position: relative;
     z-index: 1;
+}
+
+.card {
+    width: 18rem;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardsize {
+    min-height: 150px;
+    object-fit: contain;
+    height: 220px;
+}
+
+.noline {
+    text-decoration: none;
+}
+
+.slide-h {
+    height: 450px;
+}
+
+.transperent {
+    background-color: #00000033;
+}
+
+.logostyle {
+    width: 80px;
+    height: auto;
 }
