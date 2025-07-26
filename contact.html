@@ -5,16 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
+    <style>
+        .noline{
+                text-decoration: none;
+            }
+        .logostyle {
+            width: 80px;
+            height: auto;
+        }
+        header {
+      background-color: #cff4fc;
+      color: #070101;
+      padding: 30px;
+      text-align:center;
+   }
+    </style>
+    <link href="css/productcss.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- header start -->
+<div class="container-fluid">
+    <div class="bg-overlay"></div>
+    <!-- Header start -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="Images/fastfash.jpeg" alt="logo" class="img-fluid h-25 w-25">Fast Fashion</a>
+                    <img src="Images/f&f.jpg" alt="logo" class="img-fluid logostyle">Fast Fashion</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,8 +48,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="women.html">Women</a>
                         </li>
-                        <li class="nav-item active bg-info-subtle">
-                            <a class="nav-link" href="contact.html">Contact
+                        <li class="nav-item">
+                            <a class="nav-link active bg-info-subtle" href="contact.html">Contact
                                 us</a>
                         </li>
                         <li class="nav-item">
@@ -39,16 +57,23 @@
                                 Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
+                                    <a class="nav-link"
+                                        href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="product.html">Products</a>
+                                    <a class="nav-link"
+                                        href="product.html">Products</a>
                         </li>
+                         <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="Footwear.html">Footwears</a>
+                        </li>
+                        <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="accessories.html">Accessories</a>
+                                </li>
+
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </nav>
@@ -56,7 +81,7 @@
     <!-- header end -->
     <main>
         <section>
-            <div class="container">
+            <div class="container bg-body-tertiary">
                 <div class="row">
                     <div class="col-md-12">
                         <h2>Contact us</h2>
@@ -96,40 +121,45 @@
                 </div>
                 <hr>
                 <!-- Form & location -->
-                 <h3>Connect here to know more information </h3>
-                <div class="row">
+                <h3>Connect here to know more information </h3>
+                <div class="row mb-2">
                     <div class="col md-6">
-                        <div class="container border border-info">
+                        <form id="contactform" class="border border-info" onsubmit="return validateform()">
+                            <div class="container ">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Enter Your Name</label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        <label for="Name" class="form-label">Enter Your Name</label>
+                                        <input type="text" class="form-control" id="Name" name="Name"
                                             placeholder="Enter Name">
+                                        <span class="text-danger" id="nameerror"></span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Enter Email</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        <label for="Email" class="form-label">Enter Email</label>
+                                        <input type="email" class="form-control" id="Email" name="Email"
                                             placeholder="Enter Email">
+                                        <span class="text-danger" id="emailerror"></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Enter Phone No.</label>
-                                        <input type="number" class="form-control" id="exampleFormControlInput1"
+                                        <label for="Phone" class="form-label">Enter Phone No.</label>
+                                        <input type="number" class="form-control" id="Phone" name="Phone"
                                             placeholder="Enter Phone number">
+                                        <span class="text-danger" id="mobileerror"></span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Enter Alternative
+                                        <label for="AlternateNumber" class="form-label">Enter Alternative
                                             Number</label>
-                                        <input type="number" class="form-control" id="exampleFormControlInput1"
+                                        <input type="number" class="form-control" id="AlternateNumber" name="AlternateNumber"
                                             placeholder="Enter Alternative Number">
+                                        <span class="text-danger" id="alternate_error"></span>
                                     </div>
                                 </div>
                             </div>
@@ -160,9 +190,10 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Enter Zip</label>
-                                        <input type="number" class="form-control" id="exampleFormControlInput1"
+                                        <label for="Zipcode" class="form-label">Enter Zip</label>
+                                        <input type="number" class="form-control" id="Zipcode" name="Zipcode"
                                             placeholder="Enter Zipcode">
+                                        <span class="text-danger" id="zipcode_error"></span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -187,9 +218,10 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="mb-3">
-                                            <label for="exampleFormControlTextarea1" class="form-label">Query</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            <label class="form-label" >Message</label>
+                                            <textarea class="form-control" id="Message" name="Message"
                                                 rows="3"></textarea>
+                                            <span class="text-danger" id="msgerror"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -198,15 +230,15 @@
                                 <button type="submit" class="btn btn-primary w-50 text-lg-center mb-2">Submit</button>
                             </div>
                         </div>
+                        </form>
                     </div>
-                    <div class="col md-6">
+                    <div class="col-md-6">
                         <iframe class="border border-info"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30242.485870890658!2d73.82841195996457!3d18.65004706686604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c7c48ab7f353%3A0x1f7bf819cab2fc37!2sBrandhouse%20collection!5e0!3m2!1sen!2sin!4v1752077760914!5m2!1sen!2sin"
-                            width="600" height="535" style="border:0;" allowfullscreen="" loading="lazy"
+                            width="535" height="535" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
     </main>
@@ -216,14 +248,13 @@
             <div class="row ">
                 <div class="col-md-4 text-center">
                     <a href="index.html">
-                        <img src="Images/fastfash.jpeg" class="img-fluid h-75 w-75 m-2" alt="image here">
+                        <img src="Images/f&f.jpg" class="img-fluid h-50 w-50 m-2" alt="logo here">
                     </a>
                     <h4>Fast & Fashion</h4>
                 </div>
                 <div class="col-md-4 text-center">
                     <h3>Quick Links</h3>
                     <a href="index.html" class=" noline">Home</a><br>
-                    <a href="product.html" class=" noline">Product</a><br>
                     <a href="services.html" class=" noline">Service</a><br>
                     <a href="contact.html" class=" noline">Contact
                         Us</a><br>
@@ -231,6 +262,7 @@
                         Us</a><br>
                     <a href="men.html" class=" noline">Mens</a><br>
                     <a href="women.html" class=" noline">Womens</a><br>
+                    <a href="product.html" class=" noline">Products</a><br>
                 </div>
                 <div class="col-md-4 text-center">
                     <h3>Follow Us</h3>
@@ -272,8 +304,94 @@
             </div>
         </div>
     </footer>
+</div>
     <!-- footer end -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+            function validateform()
+            {
+                // Get Form Values
+                const name = document.getElementById("Name").value.trim();
+                const email = document.getElementById("Email").value.trim();
+                const mobile = document.getElementById("Phone").value.trim();
+                const message = document.getElementById("Message").value.trim();
+                const zipcode = document.getElementById("Zipcode").value.trim();
+                const alternatenumber = document.getElementById("AlternateNumber").value.trim();
+
+                // Error span 
+                const nameError = document.getElementById("nameerror");
+                const emailError = document.getElementById("emailerror");
+                const mobileError = document.getElementById("mobileerror");
+                const messageError = document.getElementById("msgerror");
+                const zipcodeError = document.getElementById("zipcode_error");
+                const alternate_Error = document.getElementById("alternate_error");
+                
+                // Clear previous error message
+                nameError.textContent = "";
+                emailError.textContent = "";
+                mobileError.textContent = "";
+                messageError.textContent = "";
+                zipcodeError.textContent = "";
+                alternate_Error.textContent = "";
+
+                let isValid = true;
+
+                // Validate Fields
+                if (name===""){
+                    nameError.textContent = "Please Enter Your Name";
+                    isValid=false;
+                }else if(name.length<=3)
+                {
+                    nameError.textContent = "Name must be atleast 3 character";
+                    isValid=false;
+                }
+                if(email==="")
+                {
+                    emailError.textContent = "Please Enter Your Email";
+                    isValid=false;
+                }else if(!/^\S+@\S+\.\S+$/.test(email))
+                {
+                    emailError.textContent = "Email must have @ or . symbols";
+                    isValid=false;
+                }
+                if(mobile==="")
+                {
+                    mobileError.textContent = "Please Enter Your Mobile Number";
+                    isValid=false;
+                }else if(!/^\d{10}$/.test(mobile))
+                {
+                    mobileError.textContent = "Please Enter a Valid 10-digit number";
+                    isValid=false;
+                }
+                if(alternatenumber==="")
+                {
+                    alternate_Error.textContent = "Please Enter Your Mobile Number";
+                    isValid=false;
+                }else if(!/^\d{10}$/.test(mobile))
+                {
+                    alternate_Error.textContent = "Please Enter a Valid 10-digit number";
+                    isValid=false;
+                }
+                if(message==="")
+                {
+                    messageError.textContent = "Please Enter your message";
+                    isValid=false;
+                }
+                if(zipcode==="")
+                {
+                    zipcodeError.textContent = "Please Enter Your Zipcode";
+                    isValid=false;
+                }else if(!/^[1-9][0-9]{5}$/.test(zipcode))
+                {
+                    zipcodeError.textContent = "Please Enter a Valid Zipcode, Which is 6 digit and Starting Not from 0";
+                    isValid=false;
+                }
+                if(isValid){
+                    alert("Form Submitted Successfully!");
+                }
+                return isValid; // prevent form submission if invalid
+            }
+        </script>
 </body>
 
 </html>
