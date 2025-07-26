@@ -1,70 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Services - Fast Fashion</title>
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <title>Clothing Products</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <style>
-    .logostyle{
+     .logostyle{
                 width: 80px;
                 height: auto;
             }
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
+      padding: 0;
+      background-color: pink;
     }
 
     header {
-      background-color: #23e1ef;
-      color: black;
-      padding: 20px;
+      background-color: blueviolet;
+      color: lightseagreen;
+      padding: 1rem 2rem;
       text-align: center;
     }
 
-    h1 {
-      margin: 0;
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
     }
 
-    .container {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .service {
-      background-color: #fff;
+    .product {
+      background-color: yellow;
+      border: 1px solid black;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(23, 21, 21, 0.1);
-      padding: 20px;
-      margin-bottom: 30px;
-      transition: transform 0.3s ease;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.2s;
     }
 
-    .service:hover {
-      transform: translateY(-5px);
-  
+    .product:hover {
+      transform: scale(1.03);
     }
 
-    .service h2 {
-      color: #e91e63;
-      margin-top: 0;
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      margin: 0.5rem 0;
+    }
+
+    .price {
+      color: green;
+      font-weight: bold;
     }
 
     footer {
-      background-color: #222;
-      color: #fff;
       text-align: center;
-      padding: 15px;
-      margin-top: 40px;
+      padding: 1rem;
+      background-color: skyblue;
+      color: white;
     }
   </style>
 </head>
 <body>
-<header class="sticky-top">
+  <header class="sticky-top">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">
@@ -100,57 +103,56 @@
                                     aria-disabled="true">About Us</a>
                             </li>
                              <li class="nav-item">
-                                <a class="nav-link active bg-info-subtle"
-                                    href="services.html">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="product.html">Products</a>
-                            </li>
+                                    <a class="nav-link"
+                                        href="services.html">Services</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link active bg-info-subtle"
+                                        href="product.html">Products</a>
+                              </li>
+                               <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="Footwear.html">Footwears</a>
+                                </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
-        <header>
-  <header>
-    <h1>Our Services</h1>
-    <p>What we offer at StylishWear</p>
-  </header>
 
-  <div class="container">
-    
-    <div class="service">
-      <h2>Free Shipping</h2>
-      <p>Enjoy free delivery on all orders above ₹499. Fast, secure, and contactless shipping available across India.</p>
-    </div>
+<header>
+  <h1>Fast Fashion Store - Products</h1>
+</header>
 
-    <div class="service">
-      <h2>Custom Designs</h2>
-      <p>Want your own style? Get personalized Shirt ,t-shirts,Jeans and hoodies with custom prints and embroidery.</p>
-    </div>
-
-    <div class="service">
-      <h2>Easy Returns</h2>
-      <p>Return or exchange within 7 days – no questions asked. Your satisfaction is our priority.</p>
-    </div>
-
-    <div class="service">
-      <h2>Cash on Delivery</h2>
-      <p>Pay only when you receive the product. COD available in most Indian cities and towns.</p>
-    </div>
-
-    <div class="service">
-      <h2>24/7 Support</h2>
-      <p>Need help? Our team is always available on WhatsApp and Email to solve your issues quickly.</p>
-    </div>
-
+<main class="products">
+  <div class="product">
+    <img src="images/casual Tshirt.jpg" alt="T-Shirt">
+    <h3>Casual T-Shirt</h3>
+    <p class="price">₹499</p>
   </div>
 
-  <footer>
-    <p>&copy; 2025 Fast Fashion. All rights reserved.</p>
-  </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
+  <div class="product">
+    <img src="images/Blue jeans.jpg" alt="Jeans">
+    <h3>Blue Jeans</h3>
+    <p class="price">₹1199</p>
+  </div>
+
+  <div class="product">
+    <img src="images/Leather jaacet.jpg" alt="Jacket">
+    <h3>Leather Jacket</h3>
+    <p class="price">₹2499</p>
+  </div>
+
+  <div class="product">
+    <img src="images/Formal Dress.jpg" alt="Dress">
+    <h3>Floral Dress</h3>
+    <p class="price">₹999</p>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Fast Fashion Store. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
