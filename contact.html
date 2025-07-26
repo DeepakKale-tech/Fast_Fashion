@@ -15,15 +15,14 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img src="Images/fastfash.jpeg" alt="logo" class="img-fluid h-25 w-25">Fast Fashion</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="men.html">Men</a>
@@ -31,11 +30,19 @@
                         <li class="nav-item">
                             <a class="nav-link" href="women.html">Women</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="contact.html">Contact us</a>
+                        <li class="nav-item active bg-info-subtle">
+                            <a class="nav-link" href="contact.html">Contact
+                                us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
+                            <a class="nav-link" href="about.html">About
+                                Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Products</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -73,9 +80,9 @@
                                     hours.</p>
                             </div>
                             <div class="col-md-4">
-                                <p>F&amp;F never sends payment links via
+                                <p>Fast Fashion never sends payment links via
                                     WhatsApp, SMS or email. Pay only via
-                                    H&amp;M Website/App or at doorstep
+                                    Fast Fashion Website/App or at doorstep
                                     on delivery and disregard unusual
                                     payment requests.</p>
                             </div>
@@ -87,12 +94,124 @@
                         </div>
                     </div>
                 </div>
+                <hr>
+                <!-- Form & location -->
+                 <h3>Connect here to know more information </h3>
+                <div class="row">
+                    <div class="col md-6">
+                        <div class="container border border-info">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Enter Your Name</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Enter Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Enter Email</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Enter Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Enter Phone No.</label>
+                                        <input type="number" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Enter Phone number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Enter Alternative
+                                            Number</label>
+                                        <input type="number" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Enter Alternative Number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Select City</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Open this to choose</option>
+                                            <option value="1">Pune</option>
+                                            <option value="2">Mumbai</option>
+                                            <option value="3">Nashik</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Select Country</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Open this to choose</option>
+                                            <option value="1">India</option>
+                                            <option value="2">UK</option>
+                                            <option value="3">USA</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Enter Zip</label>
+                                        <input type="number" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Enter Zipcode">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Gender</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="radioDefault"
+                                                id="radioDefault1" checked>
+                                            <label class="form-check-label" for="radioDefault1">
+                                                Male
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="radioDefault"
+                                                id="radioDefault2">
+                                            <label class="form-check-label" for="radioDefault2">
+                                                Female
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Query</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <button type="submit" class="btn btn-primary w-50 text-lg-center mb-2">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col md-6">
+                        <iframe class="border border-info"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30242.485870890658!2d73.82841195996457!3d18.65004706686604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c7c48ab7f353%3A0x1f7bf819cab2fc37!2sBrandhouse%20collection!5e0!3m2!1sen!2sin!4v1752077760914!5m2!1sen!2sin"
+                            width="600" height="535" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
             </div>
         </section>
     </main>
     <!-- footer start -->
-    <footer class="bg-info fixed-bottom">
+    <footer class="bg-body-tertiary position-relative">
         <div class="container">
             <div class="row ">
                 <div class="col-md-4 text-center">
@@ -103,15 +222,19 @@
                 </div>
                 <div class="col-md-4 text-center">
                     <h3>Quick Links</h3>
-                    <a href="index.html" class=" text-white">Home</a><br>
-                    <a href="product.html" class=" text-white">Product</a><br>
-                    <a href="Services.html" class=" text-white">Service</a><br>
-                    <a href="contact.html" class=" text-white">Contact Us</a><br>
-                    <a href="about.html" class=" text-white">About Us</a>
+                    <a href="index.html" class=" noline">Home</a><br>
+                    <a href="product.html" class=" noline">Product</a><br>
+                    <a href="services.html" class=" noline">Service</a><br>
+                    <a href="contact.html" class=" noline">Contact
+                        Us</a><br>
+                    <a href="about.html" class=" noline">About
+                        Us</a><br>
+                    <a href="men.html" class=" noline">Mens</a><br>
+                    <a href="women.html" class=" noline">Womens</a><br>
                 </div>
                 <div class="col-md-4 text-center">
                     <h3>Follow Us</h3>
-                    <a href="https://www.facebook.com/" target="_blank" class="nolines text-white">
+                    <a href="https://www.facebook.com/" target="_blank" class="noline ">
                         <i class="bi bi-facebook "></i>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                             class="bi bi-facebook m-2" viewBox="0 0 16 16">
@@ -121,7 +244,7 @@
                         Facebook
                     </a>
                     <br>
-                    <a href="https://www.instagram.com/" target="_blank" class="nolines text-white">
+                    <a href="https://www.instagram.com/" target="_blank" class="noline ">
                         <i class="bi bi-instagram "></i>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                             class="bi bi-instagram m-2" viewBox="0 0 16 16">
@@ -131,7 +254,7 @@
                         Instagram
                     </a>
                     <br>
-                    <a href="https://www.youtube.com/" target="_blank" class="nolines text-white">
+                    <a href="https://www.youtube.com/" target="_blank" class="noline">
                         <i class="bi bi-youtube "></i>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                             class="bi bi-youtube m-2" viewBox="0 0 16 16">
