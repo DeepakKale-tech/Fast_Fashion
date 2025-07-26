@@ -4,19 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Us -Fast Fashion</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 0;
+      margin: a;
       background: #f2f2f2;
       color: #333;
     }
     header {
-      background-color:#da6b6b;
+      background-color: #23e1ef;
       color: #070101;
       padding: 30px;
-      text-align: center;
-    }
+      text-align:center;
+   }
     .container {
       max-width: 1000px;
       margin: 40px auto;
@@ -55,7 +57,59 @@
   </style>
 </head>
 <body>
-
+      <!-- Header start -->
+         
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="Images/fastfash.jpeg" alt="logo"
+                            class="img-fluid h-25 w-25">Fast Fashion</a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="men.html">Men</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="women.html"
+                                    aria-disabled="true">Women</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"
+                                    aria-disabled="true">Contact us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html"
+                                    aria-disabled="true">About Us</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link"
+                                    href="services.html">Services</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search"
+                                placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success"
+                                type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header End -->
 <header>
   <h1>Fast Fashion</h1>
 </header>
@@ -93,6 +147,7 @@
 <footer>
   &copy; 2025 Fast Fashion. All rights reserved.
 </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
